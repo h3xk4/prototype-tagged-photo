@@ -1,0 +1,18 @@
+.clear:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/**
+ * Show and hide
+ */
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}

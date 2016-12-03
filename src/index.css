@@ -1,12 +1,39 @@
 @import 'normalize.css';
+@import 'ui/utils.css';
 
 body {
-  font-family: 'Helvetica, sans-serif;
-  font-size: 12px;
-  padding: 24px;
-  background: goldenrod;
+  font-family: 'Helvetica', sans-serif;
+  padding:  24px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  font-weight: 300;
+img {
+  width: 100%;
+}
+
+/**
+ * Tagged image
+ */
+
+.tagged {
+  position: relative;
+  width: 100%;
+  border: 2px solid red;
+}
+
+.hero {
+  width: 100%;
+  float: left;
+}
+
+.marker {
+  height: 1rem;
+  width: 1rem;
+  margin-left: -.5rem;
+  margin-top: -.5rem;
+  border-radius: 10px;
+  background-color: rgba(108, 10, 86, 0.8);
+  border: 2px solid yellow;
+  position: absolute;
+  top: 24%;
+  left: 44.5%;
 }
