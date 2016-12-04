@@ -17,7 +17,6 @@ img {
 .tagged {
   position: relative;
   width: 100%;
-  border: 2px solid red;
 }
 
 .hero {
@@ -25,15 +24,50 @@ img {
   float: left;
 }
 
-.marker {
-  height: 1rem;
-  width: 1rem;
+.note_marker {
+  height: 0.5rem;
+  width: 0.5rem;
   margin-left: -.5rem;
   margin-top: -.5rem;
   border-radius: 10px;
-  background-color: rgba(108, 10, 86, 0.8);
+  background-color: red;
   border: 2px solid yellow;
   position: absolute;
+}
+
+@media (min-width: 60em) {
+  .note_marker {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+.note_marker--mock {
   top: 24%;
   left: 44.5%;
 }
+
+.note_content {
+  display: none;
+  background: black;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  z-index:  1000;
+  bottom: 1em;
+  right: -60px;
+  padding: 4px;
+  width: 120px;
+  text-align: center;
+}
+
+.note_input {
+  background: inherit;
+  border: none;
+  width:  100%;
+}
+
+.note_marker:hover > .note_content {
+  display: block;
+}
+
