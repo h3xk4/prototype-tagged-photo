@@ -1,0 +1,98 @@
+[
+  {
+    "id":"1",
+    "name":"Desktop",
+    "text":"Desktop fonts",
+    "license":"Up to 3 workstations",
+    "colour": "blue",
+    "collection":{
+      "name":"Serous Family",
+      "price":60,
+      "currency":"aud",
+      "subtext":"Includes all individual Serous styles",
+      "checked":false
+    },
+    "styles":[
+      {
+        "name":"Serous Brook",
+        "price":60,
+        "currency":"aud",
+        "checked":true
+      },
+      {
+        "name":"Serous Creek",
+        "price":60,
+        "currency":"aud",
+        "checked":false
+      }
+    ]
+  },
+  {
+    "id":"2",
+    "name":"Web",
+    "text":"Website fonts",
+    "license":"Up to 3 workstations",
+    "colour": "red",
+    "collection":{
+      "name":"Serous Family",
+      "price":60,
+      "currency":"aud",
+      "subtext":"Includes all individual Serous styles",
+      "checked":false
+    },
+    "styles":[
+      {
+        "name":"Serous Brook",
+        "price":60,
+        "currency":"aud",
+        "checked":true
+      },
+      {
+        "name":"Serous Creek",
+        "price":60,
+        "currency":"aud",
+        "checked":false
+      },
+      {
+        "name":"Serous Stream",
+        "price":60,
+        "currency":"aud",
+        "checked":false
+      }
+    ]
+  },
+  {
+    "id":"3",
+    "name":"App",
+    "text":"App fonts",
+    "license":"Up to 3 workstations",
+    "colour": "#00cc33",
+    "collection":{
+      "name":"Serous Family",
+      "price":60,
+      "currency":"aud",
+      "subtext":"Includes all individual Serous styles",
+      "checked":false
+    },
+    "styles":[
+      {
+        "name":"Serous Brook",
+        "price":60,
+        "currency":"aud",
+        "checked":true
+      },
+      {
+        "name":"Serous Creek",
+        "price":60,
+        "currency":"aud",
+        "checked":false
+      },
+      {
+        "name":"Serous Stream",
+        "price":60,
+        "currency":"aud",
+        "checked":false
+      }
+    ]
+  }
+]

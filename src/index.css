@@ -14,15 +14,30 @@ img {
  * Tagged image
  */
 
-.tagged {
+.hero {
   position: relative;
   width: 100%;
+  overflow:hidden;
 }
 
-.hero {
+.hero_image {
   width: 100%;
   float: left;
 }
+
+.hero_canvas {
+  background-color: rgba(0,0,255,0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+}
+
+.hero_notes {
+  height: 100%;
+}
+
+
 
 .note_marker {
   height: 0.5rem;
