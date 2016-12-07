@@ -3,8 +3,14 @@ import ReactDOM from 'react-dom'
 import { browserHistory, Router, Route, Link, History } from 'react-router'
 
 const data = require('./data.json');
-const hero = document.querySelector('.hero_image');
+const heroImage = document.querySelector('.hero_image');
 const heroCanvas = document.querySelector('.hero_canvas');
+
+
+
+
+
+
 
 /**
  * Note
@@ -19,13 +25,11 @@ class Notes extends React.Component {
 
   newNote(e) {
 
-    console.log('New note');
-
     // Position calculations
-    const xWidth = hero.width;
-    const yHeight = hero.height;
-    const xPosition = e.pageX - hero.offsetLeft;
-    const yPosition = e.pageY - hero.offsetTop;
+    const xWidth = heroImage.width;
+    const yHeight = heroImage.height;
+    const xPosition = e.nativeEvent.offsetX;
+    const yPosition = e.nativeEvent.offsetY;
     const x = (xPosition / xWidth) * 100;
     const y = (yPosition / yHeight) * 100;
 
@@ -33,15 +37,14 @@ class Notes extends React.Component {
     const newMarker = document.createElement('div');
 
     newMarker.classList.add('note_marker');
-    newMarker.style.left = (x - 0.5)+ '%';
-    newMarker.style.top = (y - 1) + '%';
+    newMarker.style.left = (x + 0.25)+ '%';
+    newMarker.style.top = (y) + '%';
 
     // Create the marker content
     const noteContent = document.createElement('div');
     noteContent.classList.add('note_content');
 
     const noteContentInput = document.createElement('textarea');
-    //noteContentInput.setAttribute('type', 'text');
     noteContentInput.classList.add('note_input');
 
     // Build the marker
